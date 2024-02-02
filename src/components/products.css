@@ -7,3 +7,7 @@
     margin: 5px 7px;
     border-radius: 4px;
 }
+.product img{
+    width:180px;
+    height:180px;
+}
