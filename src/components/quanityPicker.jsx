@@ -2,7 +2,7 @@ import "./quanityPicker.css";
 import {useState} from "react";
 
 
-function QuanityPicker ()
+function QuanityPicker (props)
     {
         const [quanity,setQuanity] = useState(1);
         //quanity=10; this is what we dont want to do
@@ -10,6 +10,7 @@ function QuanityPicker ()
             let value= quanity -1;
             setQuanity(value)
             console.log("Decreasing");
+            props.onQuantityChange(value);
         }
         //create the increase function
         //please use same logic but for the increasing
@@ -17,6 +18,7 @@ function QuanityPicker ()
             let value= quanity + 1;
             setQuanity(value);
             console.log("Increasing");
+            props.onQuantityChange(value);
         }
 
         return (

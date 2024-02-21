@@ -1,13 +1,43 @@
-.product
-{
-    border: 1px solid black;
-    display: inline-block;
-    width: 240px;
-    height: 320px;
-    margin: 5px 7px;
-    border-radius: 4px;
+.product {
+  border: 1px solid black;
+  display: inline-block;
+  width: 240px;
+  height: 320px;
+  margin: 5px 7px;
+  border-radius: 4px;
 }
-.product img{
-    width:180px;
-    height:180px;
+.product img {
+  width: 180px;
+  height: 180px;
+}
+.product .prices {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product .prices .total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ee6c4d;
+}
+
+.product .prices .price {
+  font-size: 16px;
+  color: #04193d;
+
+  .product .controls {
+    padding-top: 10px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    justify-content: space-around;
+  }
+  .quantityPicker button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .quantityPicker label {
+    font-weight: 600;
+    color: #293241;
+  }
 }
